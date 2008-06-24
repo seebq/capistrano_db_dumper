@@ -29,4 +29,10 @@ After installation and adding the appropriate variables:
 $ cap db_dumper:import
 
 
+Contributors
+============
+
+Credits go to Derek Haynes <derek@highgroove.com> for the original idea and first (horrible) implementation.
+
+
 Copyright (c) 2008 Charles Brian Quinn <cbq@highgroove.com>, released under the MIT license
