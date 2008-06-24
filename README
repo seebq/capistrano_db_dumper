@@ -1,0 +1,32 @@
+CapistranoDBDumper: A Capistrano Plugin
+====================================
+
+CapistranoDBDumper is a Capistrano Plugin that adds functionality to dump your entire production database into development for testing.
+
+
+Setup
+=====
+
+Install the plugin:
+
+$ script/plugin install git://github.com/seebq/capistrano_db_dumper.git
+
+CapistranoDBDumper requires the following variables:
+
+set :domain, "example.com"
+set :user, "deploy"
+set :database_username, "root"
+set :database_password, ""
+
+Simply define them in your capistrano config/deploy.rb.
+
+
+Example
+=======
+
+After installation and adding the appropriate variables:
+
+$ cap db_dumper:import
+
+
+Copyright (c) 2008 Charles Brian Quinn <cbq@highgroove.com>, released under the MIT license
